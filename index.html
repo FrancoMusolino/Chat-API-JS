@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body class="container is-max-desktop">
+    <h1>Chat</h1>
+    <main id="main-content"></main>
+
+    <footer>
+      <form id="form">
+        <div class="field">
+          <label class="label" for="message-input">Mensaje</label>
+          <div class="control">
+            <input
+              id="message-input"
+              class="input"
+              type="text"
+              placeholder="Text input"
+            />
+          </div>
+        </div>
+        <div class="control">
+          <button
+            id="submit-form"
+            class="button is-link disabled"
+            type="submit"
+            disabled
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </footer>
+
+    <template id="message-template">
+      <article class="message">
+        <!-- <div class="message-header">
+          <p>Hello World</p>
+        </div> -->
+        <div id="message-body" class="message-body"></div>
+      </article>
+    </template>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
